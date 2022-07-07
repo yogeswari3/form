@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="circle">
+                <div class="circle-inner">
+                    <h1>UWBF<br><i> </i></h1>
+                    <p><i>United Well-being Foundation</i></p>
+                    <img src="i1.jpg" alt="image">
+                </div>
+            </div>
+            <div class="form">
+                <h1>Employee Details</h1>
+                <div class="form-inner">
+                    <form action="#" method="post" onsubmit="validate_form()">
+                        <input type="text" name="name" id="name" placeholder="Name*" required/>
+                        <input type="text" name="email" id="email" placeholder="E-mail ID*" required/>
+                        <input type="number" name="phone" id="phone" placeholder="Phone No.*" maxlength="10" required/>
+                        <input type="number" name="watsapp" id="watsapp" placeholder="Whatsapp No.*" required/>
+                        <input required="" type="text" class="form-control" placeholder="Date of Birth*" onfocus="(this.type='date')"/>
+                        <div class="education">
+                            <h3>Education*</h3>
+                            <label><input type="radio" value="none" id="11th" name="education" onClick="edu()"/>11th</input></label>
+                            <label><input type="radio" value="none" id="12th" name="education" onClick="edu()"/>12th</input></label>
+                            <label><input type="radio" value="none" id="Graduation" name="education" onClick="edu()"/>Graduation</input></label>
+                            <label><input type="radio" value="none" id="Post-Graduation" name="education" onClick="edu()"/>Post-Graduation</input></label>
+                            <label><input type="radio" value="none" id="PHD" name="education" onClick="edu()"/>PHD</input></label>
+                            <label id="others" onClick="otheredu()">
+                                <input type="radio" name="education" id="other_edu" value="other" >Others:</input>
+                                <input type ="text" name="other" id="other_text" placeholder="other education"/>
+                            </label>
+                        </div>
+                        <div class="department">
+                            <h3>Your Department (For which you are selected)*</h3>
+                            <label><input type="radio" value="none" name="department"/>HR (3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Forensic Science Trainer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Psychology Research Trainee(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Psychologist (6 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Front-end Developer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Back-end Developer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Full Stack Developer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Campus Ambassador(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Content Writer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Graphic Designer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Video Editor/Making(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Social Media Marketing(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Market Research(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>UI/UX Designer(3 Months)</input></label>
+                            <label><input type="radio" value="none" name="department"/>Instagram Influencer (3 Months)</input></label>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
